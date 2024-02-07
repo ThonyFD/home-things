@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "IP-UPDATER",
+      "script": "./index.js",
+      "instances": 1,
+      "watch": false,
+      "error_file": "./logs/ip-updater-error.log",
+      "out_file": "./logs/ip-updater-out.log",
+      "exec_mode": "fork",
+      "cron_restart": "1-59/2 * * * *",
+      "autorestart": false
+    }
+  ]
+}
